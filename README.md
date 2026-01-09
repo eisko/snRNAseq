@@ -4,7 +4,15 @@ Scripts and notebooks to process and analyze single nuclei/single cell data.
 
 Started w/ analyzing downloaded data from Allen, which included single nuclei and single cell data.
 
-## Allen data
+## Allen data - Yao et al., 2023
+- Decided to use b/c has updated 10x chemistry (10xV3)
+- See [Yao et al., 2023](https://www.nature.com/articles/s41586-023-06812-z)
+- See [Github](https://github.com/AllenInstitute/abc_atlas_access/blob/main/descriptions/WMB-10X.md) for download instructions
+- See [GSE246717](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246717) or [PRJNA1030397](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1030397)
+
+
+
+## Allen data - Yao et al., 2021
 - Data used in [Yao et al. 2021](https://www.sciencedirect.com/science/article/pii/S0092867421005018?via%3Dihub)
 - Downloaded via [Allen Brain Map](https://brain-map.org/our-research/cell-types-taxonomies/cell-types-database-rna-seq-data/mouse-whole-cortex-and-hippocampus-10x)
 - Encompasses Single Cell data (not nuclei)
