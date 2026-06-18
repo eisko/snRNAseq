@@ -52,13 +52,14 @@ Roughly, the steps involve:
   - Classic examples: k-means, hierarchical, up to you to decide what's best! (Can also ask Lauren)
 8. Annotation
   - This is the trickiest and least straightforward part... If you get this far we can discuss further on different approaches you can try, will try to write out if I have time.
-  - You can try using MapMyCells (link) that's maintained by allen. It essentially labels cell type per cell based on similarity to already labelled lab mice data, curious if it works and/or is easy to use!
-  - You can also explore the MetaNeighbor Package (link) that's maintained by our collaborator and can also be used to integrate datasets (e.g. lab and singing mice data)
+  - You can try using [MapMyCells](https://brain-map.org/bkp/analyze/mapmycells) that's maintained by allen. It essentially labels cell type per cell based on similarity to already labelled lab mice data, curious if it works and/or is easy to use!
+  - You can also explore [MetaNeighbor]([link](https://github.com/gillislab/MetaNeighbor)) that's maintained by our collaborator and can also be used to integrate datasets (e.g. lab and singing mice data)
 
 Steps 3-6 are pretty standard for any machine learning or data science project and could theoretically be applied to other data types.
 
 ## Advanced projects
 - Create equivalent transcriptome from our lab mice bulk RNAseq data using [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki) - Lauren can provide information on source files
+- Determine if only using 100 BARseq genes can still get clustering/annotation of singing mouse snRNAseq data
 - Use [Kallisto](https://github.com/pachterlab/kallisto) to align raw reads to our transcriptome files, then process into cell x gene - may require creating your own pipeline
 
 ## Reading
@@ -69,18 +70,18 @@ Additionaly singing mouse papers
 - [Harpole, Zheng et al. 2025](https://doi.org/10.1016/j.cub.2025.10.036) - Paper from the Banerjee lab describing the role of PAG in singing mice vocalizations
 
 Technical Zador papers
-- Kebschull et al. 2016 - Initial MAPseq paper, describes technology
-- Sun et al. 2021 - Initial BARseq paper
+- [Kebschull et al. 2016](https://doi.org/10.1016/j.neuron.2016.07.036) - Initial MAPseq paper, describes technology
+- [Sun et al. 2021](https://doi.org/10.1038/s41593-021-00842-4) - Initial BARseq paper
 
 Gillis Papers
 - Jesse Gillis is a collaborator (he used to be at CSHL) and does a lot of work in the scRNAseq field. His papers are a great resource for best practices in analyzing and integrating scRNAseq/snRNAseq data!
-- MetaNeighbor paper - Core package that's used in a variety of ways. From diminishing batch effects, to aligning data across species.
-- Cell type marker paper - analysis used to choose 100 genes to generate BARseq panel
+- [MetaNeighbor paper](https://doi.org/10.1038/s41467-018-03282-0) - Core package that's used in a variety of ways. From diminishing batch effects, to aligning data across species.
+- [Cell type marker paper](https://doi.org/10.1016/j.isci.2021.103292) - analysis used to choose 100 genes to generate BARseq panel
 
 Comparative transcriptomics papers
-- Tosches - Great paper using snRNAseq to explore the evolution of cortical cell types
-- Colquitt - Compares across bird and mice to confirm that bird pallium is in fact convergent, *not* homologous, to mammalian cortex, despite the similar function!
-- Gillis - Compares across a wide range of species, from plants to animals
+- [Tosches et al. 2018](https://doi.org/10.1126/science.aar4237) - Great paper using snRNAseq to explore the evolution of cortical cell types
+- [Colquitt et al. 2021](https://doi.org/10.1126/science.abd9704) - Compares across bird and mice to confirm that bird pallium is in fact convergent, *not* homologous, to mammalian cortex, despite the similar function!
+- [Gillis lab](https://scholar.google.com/citations?user=N7GhB1IAAAAJ&hl=en) - Honestly there's so many papers you could read from his lab, put the link to his google scholar, you can browse and decide what looks most interesting/relevant
 - BICCN - Consortium paper that compares cortical sequencing across primates (?)
 
 Allen papers
