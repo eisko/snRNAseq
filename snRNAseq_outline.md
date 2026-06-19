@@ -22,7 +22,7 @@ The data files provided by the core can be found on the CSHL (ie. bamdev) here:
 
 The output of **Cell Ranger** includes the following (useful/relevant) files:
 - `XXX.html` - provides quality control measures
-- `XXX.cloupe` - condensed file used for preliminary inspection of data using Cloupe browser (provide link/tutorial?)
+- `XXX.cloupe` - condensed file used for preliminary inspection of data using [Loupe browser](https://www.10xgenomics.com/support/software/loupe-browser/latest?gad_source=1)
 - `XXX_filtered_barcodes.h5` - file can easily be read into python/R for analysis, contains cell x gene matrix
 
 Most of the snRNAseq analysis will focus on processing and plotting the `.h5` file.
@@ -53,7 +53,7 @@ Roughly, the steps involve:
 8. Annotation
   - This is the trickiest and least straightforward part... If you get this far we can discuss further on different approaches you can try, will try to write out if I have time.
   - You can try using [MapMyCells](https://brain-map.org/bkp/analyze/mapmycells) that's maintained by allen. It essentially labels cell type per cell based on similarity to already labelled lab mice data, curious if it works and/or is easy to use!
-  - You can also explore [MetaNeighbor]([link](https://github.com/gillislab/MetaNeighbor)) that's maintained by our collaborator and can also be used to integrate datasets (e.g. lab and singing mice data)
+  - You can also explore [MetaNeighbor](https://github.com/gillislab/MetaNeighbor) that's maintained by our collaborator and can also be used to integrate datasets (e.g. lab and singing mice data)
 
 Steps 3-6 are pretty standard for any machine learning or data science project and could theoretically be applied to other data types.
 
@@ -63,6 +63,8 @@ Steps 3-6 are pretty standard for any machine learning or data science project a
 - Use [Kallisto](https://github.com/pachterlab/kallisto) to align raw reads to our transcriptome files, then process into cell x gene - may require creating your own pipeline
 
 ## Reading
+The following are a loooong list of papers that either I think are really interesting and/or relevant for this project. I would start with Isko et al. 2026, the Harris and Shepherd, 2015 review, and 2-3 of the comparative transcriptomics papers. After that, it's up to you to decide how many and which papers to read. I don't expect you to read them all, but should serve as a reference if there's a particular question you're wondering about!
+
 - [Isko et al. 2026](https://doi.org/10.1038/s41586-026-10458-y) - The work that inspired this project
 
 Additionaly singing mouse papers
@@ -81,20 +83,24 @@ Gillis Papers
 Comparative transcriptomics papers
 - [Tosches et al. 2018](https://doi.org/10.1126/science.aar4237) - Great paper using snRNAseq to explore the evolution of cortical cell types
 - [Colquitt et al. 2021](https://doi.org/10.1126/science.abd9704) - Compares across bird and mice to confirm that bird pallium is in fact convergent, *not* homologous, to mammalian cortex, despite the similar function!
+- [Kebschull et al. 2020](https://doi.org/10.1126/science.abd5059) - A great example of using transcriptomics and projections to infer evolutionary relationships between species
 - [Gillis lab](https://scholar.google.com/citations?user=N7GhB1IAAAAJ&hl=en) - Honestly there's so many papers you could read from his lab, put the link to his google scholar, you can browse and decide what looks most interesting/relevant
-- BICCN - Consortium paper that compares cortical sequencing across primates (?)
+- [BICCN](https://www.nature.com/collections/fgihbeccbd) - Consortium, including Allen institute, that maintains and analyzes transcriptome cortical data from multiple species; you can find some comparative species papers here
 
 Allen papers
 - Note: Allen papers tend to be *very* dense. I mostly use them as references and don't get too caught up on the details of the results.
-- MAP my cell - describes and uses
-- motor cortex paper - uses various technologies to characterize the forelimb motor cortex, can be a good baseline for what we expect the cell types to be in our sample
+- [MapMyCells paper](https://www.biorxiv.org/content/10.64898/2026.03.06.710160v1) - paper for Allen's MapMyCells program
+- [motor cortex paper](https://www.nature.com/collections/fgihbeccbd) - uses various technologies to characterize the forelimb motor cortex, can be a good baseline for what we expect the cell types to be in our sample
+- [cell taxonomy](https://brain-map.org/our-research/cell-types-taxonomies) - Homepage for Allen cell type taxonomy - I would say this is the standard for the field currently and the taxonomy we would want to apply to our own dataset
 
 Reviews
-- Harris and Shepherd, 2015 - Old but outlines cortical cell types clearly
-- Tosches, 2017 - Outlines how circuits can be modified to result in new function
-- xxx - Interesting review that outlines long-range cortical projections and application to neural networks
+- [Harris and Shepherd, 2015](https://doi.org/10.1038/nn.3917) - Old but outlines cortical cell types clearly
+- [Tosches, 2017](https://doi.org/10.1016/j.ydbio.2017.06.016) - Outlines how circuits can be modified to result in new function
+- [Granier et al. 20205](https://doi.org/10.48550/arXiv.2504.03031) - Interesting review that outlines long-range cortical projections and application to neural networks
+- [Arendt et al. 2016](https://doi.org/10.1038/nrg.2016.127) - Classic paper proposing mechanism for cell type evolution
+- [Kast and Levitt, 2019](https://doi.org/10.1016/j.pneurobio.2019.01.003) - Not super relevant to this project, but I think this is just a great review...
 
 Bioinformatics
-- Textbook outlining core bioinformatics concepts
+- [Applied Bioinformatics](https://readiab.org/introduction.html) - Textbook outlining core bioinformatics concepts
 
 
