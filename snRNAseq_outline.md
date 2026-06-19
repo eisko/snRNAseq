@@ -67,8 +67,9 @@ The following are a loooong list of papers that either I think are really intere
 
 - [Isko et al. 2026](https://doi.org/10.1038/s41586-026-10458-y) - The work that inspired this project
 
-Additionaly singing mouse papers
+Additional singing mouse papers
 - [Okobi, Banerjee et al. 2019](https://doi.org/10.1126/science.aau9480) - Arka's postdoc paper that initially described the turn-taking behavior and identified OMC
+- [Smith et al. 2020](https://doi.org/10.1186/s12864-023-09678-7) - Singing mouse genome paper
 - [Harpole, Zheng et al. 2025](https://doi.org/10.1016/j.cub.2025.10.036) - Paper from the Banerjee lab describing the role of PAG in singing mice vocalizations
 
 Technical Zador papers
